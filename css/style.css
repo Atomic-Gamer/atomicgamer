@@ -2,6 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #2c3e50;
+}
+
 body{
 	background-color: #ced6e0;
 }
@@ -56,16 +66,63 @@ body{
 .contact button a{
 	text-decoration: none;
 }
-.home img{
+.leftlogo img{
 	position: absolute;
-	left: 25%;
-	top: 22%;
-	width: 650px;
+	left: 4%;
+	top: 32%;
+	width: 300px;
 }
-.welcome{
+.rightlogo img{
 	position: absolute;
-	top: 92%;
+	right: 4%;
+	top: 32%;
+	width: 300px;
+}
+.welcome h1{
+	width: 300px;
+	height: 150px;
+	padding-top: 120px;
+	text-align: center;
+	background-color:#0398fc;
+	position: absolute;
+	top: 40%;
+	font-size: 30px;
 	font-family: 'Raleway', sans-serif;
-	color: #10ac84;
-	left: 33%;
+	color: #fff;
+	left: 37%;
+	cursor: pointer;
+	transition: 0.2s linear;
+	animation: animate 2s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes animate{
+	0%{
+		border-radius: 0%;
+	}
+	75%{
+		background-color: lightgreen;
+	}
+	100%{
+		border-radius: 50%;
+		background-color: lightgreen;
+	}
+}
+.welcome h1::after{
+	content: "Atomic-Gamer";
+	animation: textchange 2s linear infinite;
+	color: tomato;
+}
+@keyframes textchange{
+    0%{
+         content: "Atomic-Gamer";
+    }
+    100%{
+    	content: "AbhijeetGamer";
+    }
+}
+.aboutus h2{
+    position: absolute;
+    left: 45%;
+    top: 105%;
+    color: #2c3e50;
 }
