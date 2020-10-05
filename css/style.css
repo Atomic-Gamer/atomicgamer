@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ced6e0;
+}
+.logo img{
+    height: 110px;
+}
+.header {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.main_header {
+	width: 450px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.main_header a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway', sans-serif;
+    transition: 0.2s;
+}
+.main_header a:hover{
+	color: #f1c40f;
+	transition: 0.2s;
+}
+.contact button{
+    margin-right: 60px;
+	font-size: 15px;
+	background-color: #0398fc;
+	color: black;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 45px;
+	cursor: pointer;
+	transition: 0.5s linear;
+    -webkit-box-shadow: 10px 10px 22px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 22px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 22px -5px rgba(0,0,0,0.75);
+  }
+
+.contact button:hover{
+	background-color: #636e72;
+	color: #fff;
+	transition: 0.2s linear;
+	-webkit-box-shadow: 10px 10px 22px -5px rgba(66,183,212,1);
+    -moz-box-shadow: 10px 10px 22px -5px rgba(66,183,212,1);
+    box-shadow: 10px 10px 22px -5px rgba(66,183,212,1);
+}
+.contact button a{
+	text-decoration: none;
+}
+.home img{
+	position: absolute;
+	left: 25%;
+	top: 22%;
+	width: 650px;
+}
+.welcome{
+	position: absolute;
+	top: 92%;
+	font-family: 'Raleway', sans-serif;
+	color: #10ac84;
+	left: 33%;
+}
